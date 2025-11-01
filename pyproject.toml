@@ -57,3 +57,12 @@ reportMissingModuleSource = "none"  # -> most common: prettytable in mdp manager
 reportGeneralTypeIssues = "none"  # -> usage of literal MISSING in dataclasses
 reportOptionalMemberAccess = "warning"
 reportPrivateUsage = "warning"
+
+[dependency-groups]
+playground = [
+    "playground>=0.0.2",
+    "mediapy>=1.2.4",
+    "wandb>=0.22.3",
+    "jax[cuda12]>=0.4.30",
+    "tensorboard>=2.20.0",
+]
